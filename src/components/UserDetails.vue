@@ -4,6 +4,7 @@
     <p>Many details</p>
     <p>User Name: {{ name }}</p>
     <p>User Reversed Name: {{ reverseName() }}</p>
+    <button @click="resetName" class="text-xl mt-4 font-hairline rounded-full px-4 py-1 leading-normal bg-green-lightest border border-green text-green hover:bg-green hover:text-white">Reset Name</button>
   </div>
 </template>
 
