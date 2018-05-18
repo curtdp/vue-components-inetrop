@@ -13,10 +13,11 @@
             :name="name"
             @nameWasReset="name = $event"
             :resetFn="resetName"
+            :userAge="age"
             ></user-details>
         </div>
         <div class="w-1/2">
-          <edit-user></edit-user>
+          <edit-user :userAge="age"></edit-user>
         </div>
       </div>
     </div>
@@ -30,7 +31,8 @@ import EditUser from './components/EditUser.vue'
 export default {
   data() {
     return {
-      name: 'Igor'
+      name: 'Igor',
+      age: 29
     }
   },
   methods: {
