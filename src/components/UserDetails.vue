@@ -3,12 +3,18 @@
     <h1>You may view User Details here</h1>
     <p>Many details</p>
     <p>User Name: {{ name }}</p>
+    <p>User Reversed Name: {{ reverseName() }}</p>
   </div>
 </template>
 
 <script>
   export default {
-
+    props: ['name'],
+    methods: {
+      reverseName() {
+        return this.name.split("").reverse().join("");
+      }
+    }
   }
 </script>
 
