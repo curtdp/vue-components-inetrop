@@ -16,6 +16,9 @@
     methods: {
       reverseName() {
         return this.name.split("").reverse().join("");
+      },
+      resetName() {
+        this.name = 'Igor';
       }
     }
   }
