@@ -5,6 +5,8 @@
       <p>I'm an awesome user!</p>
       <button @click="changeName" class="text-xl mt-4 font-hairline rounded-full px-4 py-1 leading-normal bg-white border border-purple text-purple hover:bg-purple hover:text-white">Change my name!</button>
       <hr class="border">
+      <p>Имя: {{ name }}</p>
+      <hr class="border">
       <div class="flex mb-4">
         <div class="w-1/2 mr-4">
           <user-details :name="name" @nameWasReset="name = $event"></user-details>
