@@ -9,7 +9,11 @@
       <hr class="border">
       <div class="flex mb-4">
         <div class="w-1/2 mr-4">
-          <user-details :name="name" @nameWasReset="name = $event"></user-details>
+          <user-details
+            :name="name"
+            @nameWasReset="name = $event"
+            :resetFn="resetName"
+            ></user-details>
         </div>
         <div class="w-1/2">
           <edit-user></edit-user>
@@ -32,6 +36,9 @@ export default {
   methods: {
     changeName() {
       this.name = 'Anna'
+    },
+    resetName() {
+      this.name = 'Igor'
     }
   },
   name: 'app',
