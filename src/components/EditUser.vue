@@ -13,7 +13,7 @@
     methods: {
       editAge() {
         this.userAge = 30;
-        this.$emit('ageWasEdited', this.userAge)
+        this.$emit('ageWasEdited', this.userAge);
       }
     },
   }
