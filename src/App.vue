@@ -7,7 +7,7 @@
       <hr class="border">
       <div class="flex mb-4">
         <div class="w-1/2 mr-4">
-          <user-details></user-details>
+          <user-details :name="name"></user-details>
         </div>
         <div class="w-1/2">
           <edit-user></edit-user>
