@@ -17,7 +17,10 @@
             ></user-details>
         </div>
         <div class="w-1/2">
-          <edit-user :userAge="age"></edit-user>
+          <edit-user
+            :userAge="age"
+            @ageWasEdited="age = $event"
+          ></edit-user>
         </div>
       </div>
     </div>
