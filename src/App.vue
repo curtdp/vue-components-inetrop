@@ -7,7 +7,7 @@
       <hr class="border">
       <div class="flex mb-4">
         <div class="w-1/2 mr-4">
-          <user-details :name="name"></user-details>
+          <user-details :name="1"></user-details>
         </div>
         <div class="w-1/2">
           <edit-user></edit-user>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style>
-  body {
-
+  html {
+    font-size: 18px;
   }
 </style>
