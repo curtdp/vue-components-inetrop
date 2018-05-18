@@ -18,7 +18,7 @@
         return this.name.split("").reverse().join("");
       },
       resetName() {
-        this.name = 'Igor';
+        this.$emit('nameWasReset', 'Igor');
       }
     }
   }
